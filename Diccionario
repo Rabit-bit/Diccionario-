@@ -1,0 +1,20 @@
+# Paso 1: Crear el diccionario
+informacion_personal = {
+    "nombre": "Carlos López",
+    "edad": 30,
+    "ciudad": "Quito",
+    "profesion": "Ingeniero Civil"
+}
+
+# Paso 2: Modificar la ciudad
+informacion_personal["ciudad"] = "Guayaquil"
+
+# Paso 3: Verificar si existe la clave "telefono", si no agregarla
+if "telefono" not in informacion_personal:
+    informacion_personal["telefono"] = "0987654321"
+
+# Paso 4: Eliminar la clave "edad"
+del informacion_personal["edad"]
+
+# Paso 5: Imprimir el diccionario final
+print(informacion_personal)
